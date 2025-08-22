@@ -538,6 +538,29 @@ LIST2 FUSE1 "PWRTE" "Disabled"=3FFF "Enabled"=3FF7
 LIST3 FUSE1 "Oscillator" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
 LIST4 FUSE1 "Code Protect" "Disabled"=3FFF "Enabled"=00CF
 
+CHIPname=16C54
+INCLUDE=Y
+KITSRUS.COM=18pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp2
+ProgramDelay=1
+ProgramFlag2=25
+PanelSizing=3
+CoreType=bit14_A
+ROMsize=000200
+EEPROMsize=00000000
+FUSEblank=0FFF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "WDT" "Enabled"=3FFF "Disabled"=3FFB
+LIST2 FUSE1 "PWRTE" "Enabled"=3FFF "Disabled"=3FF7
+LIST3 FUSE1 "Oscillator" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST4 FUSE1 "Code Protect" "Disabled"=3FFF "Enabled"=3FEF
+
 CHIPname=16C61
 INCLUDE=Y
 KITSRUS.COM=18pin
@@ -3223,6 +3246,34 @@ CALword=N
 BandGap=N
 ICSPonly=N
 ChipID=0E20
+LIST1 FUSE1 "WDT" "Enabled"=3FFF "Disabled"=3FFB
+LIST2 FUSE1 "PWRTE" "Disabled"=3FFF "Enabled"=3FF7
+LIST3 FUSE1 "BODEN" "Enabled"=3FFF "Disabled"=3FBF
+LIST4 FUSE1 "LVP" "Enabled"=3FFF "Disabled"=3F7F
+LIST5 FUSE1 "CPD" "Disabled"=3FFF "Enabled"=3EFF
+LIST6 FUSE1 "WRT Enable" "Enabled"=3FFF "WRT_256"=3DFF "WRT_1FOURTH"=3BFF "WRT_HALF"=39FF
+LIST7 FUSE1 "DEBUG" "Disabled"=3FFF "Enabled"=37FF
+LIST8 FUSE1 "Oscillator" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST9 FUSE1 "Code Protect" "Disabled"=3FFF "Enabled"=1FFF
+
+CHIPname=16F887
+INCLUDE=Y
+KITSRUS.COM=40pin
+EraseMode=5
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramFlag2=1
+PanelSizing=7
+CoreType=bit14_E
+ROMsize=002000
+EEPROMsize=00000100
+FUSEblank=3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=1420
 LIST1 FUSE1 "WDT" "Enabled"=3FFF "Disabled"=3FFB
 LIST2 FUSE1 "PWRTE" "Disabled"=3FFF "Enabled"=3FF7
 LIST3 FUSE1 "BODEN" "Enabled"=3FFF "Disabled"=3FBF
