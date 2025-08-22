@@ -1,5 +1,5 @@
 # picpro a kitsrus PIC CLI programmer
-
+![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=faymaz.picpro)
 This is complete rewrite of kitsrus_pic_programmer into Python 3 + bunch of fixes and features.
 
 [![Tox tests](https://github.com/Salamek/picpro/actions/workflows/python-test.yml/badge.svg)](https://github.com/Salamek/picpro/actions/workflows/python-test.yml)
