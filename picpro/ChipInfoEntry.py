@@ -43,7 +43,7 @@ class ChipInfoEntry:
         'bit12_b': 11,
         'bit14_h': 12,
         'bit16_c': 13,
-        'newf12b': None  # !FIXME Not in docs
+        'newf12b': 11 # From microbrn.exe dump, sends 11 for this core
     }
 
     _power_sequence_dict = {
@@ -129,7 +129,7 @@ class ChipInfoEntry:
             return 16
         if self.core_type in ['bit14_a', 'bit14_b', 'bit14_c', 'bit14_d', 'bit14_e', 'bit14_f', 'bit14_g', 'bit14_h']:
             return 14
-        if self.core_type in ['bit12_a', 'bit12_b']:
+        if self.core_type in ['bit12_a', 'bit12_b', 'newf12b']:
             return 12
 
         raise ValueError('Failed to detect core bits.')
